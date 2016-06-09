@@ -1,0 +1,671 @@
+body.path-mod-coursereadings .generalbox.mod-coursereadings-content {
+	padding:10px;
+}
+
+body.path-mod-coursereadings .generalbox.mod-coursereadings-content th, body.path-mod-coursereadings .generalbox.mod-coursereadings-content  td {
+	padding:0 2px;
+	border:1px solid #000;
+}
+
+/* Allow for autocomplete dropdowns on short dashboard pages. */
+body.path-mod-coursereadings-manage #page-content {
+	min-height:550px;
+}
+.yui3-aclist {
+	max-height:550px;
+	overflow-y:auto;
+}
+.mform .fitem .felement .yui3-aclist {
+	max-height:400px;
+}
+
+.coursereadings-download-selected {
+	margin-top:20px;
+}
+
+#page-mod-coursereadings-index .mod-coursereadings-content .paging {
+	margin-top:10px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+
+/* Drag-n-drop module choice */
+.dndupload_coursereadings_options input {
+	margin-top:7px;
+}
+.dndupload_coursereadings_options label em {
+	padding-left:23px;
+	line-height:1.2em;
+}
+
+/* Article details overlay */
+ul.dndupload_handler_sourceType,
+ul.dashboard_sourceType {
+	display:inline;
+}
+ul.dndupload_handler_sourceType li,
+ul.dashboard_sourceType li {
+	display:inline;
+	list-style-type:none;
+	margin:0;
+	padding:3px 15px 2px;
+	border-width:1px 1px 0 1px;
+	border-style:solid;
+	border-color:#000;
+	background-color:#fff;
+}
+ul.dndupload_handler_sourceType li label,
+ul.dashboard_sourceType li label {
+	display:inline-block;
+	height:16px;
+	margin-bottom:0;
+}
+ul.dndupload_handler_sourceType li.dndupload_handler_sourceType_journal,
+ul.dashboard_sourceType li.dashboard_sourceType_journal,
+ul.dndupload_handler_sourceType li.dndupload_handler_sourceType_other,
+ul.dashboard_sourceType li.dashboard_sourceType_other {
+	margin-left:-1px;
+}
+ul.dndupload_handler_sourceType input,
+ul.dashboard_sourceType input {
+	position:absolute;
+	left:-10000px;
+}
+table.dndupload_handler_source_details,
+table.dashboard_source_details {
+	margin-top:-1px;
+	border:1px solid #000;
+}
+/* Tighten up spacing between rows in the form, to ease use on smaller screens. */
+.dndupload_handler_article_details input[type="text"],
+.dndupload_handler_source_details input[type="text"],
+.dndupload_handler_source_details select {
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+form.dndupload_handler_book .dndupload_handler_volume,
+form.dndupload_handler_book .dndupload_handler_edition,
+form.dndupload_handler_book .dndupload_handler_journal_notice,
+form.dndupload_handler_book .dndupload_handler_subtype,
+form.dndupload_handler_book .dndupload_handler_furtherinfo,
+form.dndupload_handler_journal .dndupload_handler_sourceEditor,
+form.dndupload_handler_journal .dndupload_handler_sourceAuthor,
+form.dndupload_handler_journal .dndupload_handler_publisher,
+form.dndupload_handler_journal .dndupload_handler_pages,
+form.dndupload_handler_journal .dndupload_handler_subtype,
+form.dndupload_handler_journal .dndupload_handler_furtherinfo,
+form.dndupload_handler_other .dndupload_handler_volume,
+form.dndupload_handler_other .dndupload_handler_edition,
+form.dndupload_handler_other .dndupload_handler_journal_notice,
+form.dndupload_handler_other .dndupload_handler_sourceEditor,
+form.dndupload_handler_other .dndupload_handler_publisher,
+form.dndupload_handler_other .dndupload_handler_pages,
+form.dndupload_handler_other .dndupload_handler_isbn,
+.dashboard_book .dashboard_volume,
+.dashboard_book .dashboard_edition,
+.dashboard_book .dashboard_journal_notice,
+.dashboard_book .dashboard_subtype,
+.dashboard_book .dashboard_furtherinfo,
+.dashboard_journal .dashboard_sourceEditor,
+.dashboard_journal .dashboard_sourceAuthor,
+.dashboard_journal .dashboard_publisher,
+.dashboard_journal .dashboard_pages,
+.dashboard_journal .dashboard_subtype,
+.dashboard_journal .dashboard_furtherinfo,
+.dashboard_other .dashboard_volume,
+.dashboard_other .dashboard_edition,
+.dashboard_other .dashboard_journal_notice,
+.dashboard_other .dashboard_sourceEditor,
+.dashboard_other .dashboard_publisher,
+.dashboard_other .dashboard_pages,
+.dashboard_other .dashboard_isbn {
+	display:none;
+}
+/* Hide journal notice if there wasn't a file uploaded (we're adding an external article). */
+form.dndupload_handler_journal .no-file-upload .dndupload_handler_journal_notice {
+	display:none;
+}
+form.dndupload_handler_book li.dndupload_handler_sourceType_journal,
+form.dndupload_handler_book li.dndupload_handler_sourceType_other,
+form.dndupload_handler_journal li.dndupload_handler_sourceType_book,
+form.dndupload_handler_journal li.dndupload_handler_sourceType_other,
+form.dndupload_handler_other li.dndupload_handler_sourceType_book,
+form.dndupload_handler_other li.dndupload_handler_sourceType_journal,
+.dashboard_book li.dashboard_sourceType_journal,
+.dashboard_book li.dashboard_sourceType_other,
+.dashboard_journal li.dashboard_sourceType_book,
+.dashboard_journal li.dashboard_sourceType_other,
+.dashboard_other li.dashboard_sourceType_book,
+.dashboard_other li.dashboard_sourceType_journal {
+	background-color:#aeaeae;
+	padding:1px 15px 1px;
+}
+.dndupload_handler_source_button {
+	display:none;
+	font-size:80%;
+	line-height:90%;
+	padding:1px;
+	vertical-align:top;
+	margin-top:-2px;
+}
+.dndupload_handler_source_selected .dndupload_handler_source_button {
+	display:inline;
+}
+
+/* Mod settings form */
+.coursereadings-article-chooser {
+	position:relative;
+	min-height:50px;
+	min-width:400px;
+	max-width:590px;
+	padding:10px;
+}
+.coursereadings-article-chooser .coursereadings-articles-json {
+	display:none;
+}
+.coursereadings-article-chooser .coursereadings-articles-loading {
+	height:20px;
+	top:0;left:0;bottom:0;right:0;
+	position:absolute;
+	margin:auto 0;
+	text-align:center;
+}
+.coursereadings-article-chooser .coursereadings-article {
+	width:340px;
+	margin:5px auto;
+	border:1px solid #333;
+	border-radius:6px;
+	padding:4px 30px;
+	position:relative;
+	background-color:#ddd;
+}
+.coursereadings-article-chooser .coursereadings-article .drag-handle,
+.coursereadings-article-chooser .coursereadings-article .delete-btn {
+	display:block;
+	width:18px;
+	height:18px;
+	position:absolute;
+	border:1px solid #666;
+	border-radius:4px;
+	top:0;
+	bottom:0;
+	margin:auto 0;
+}
+.coursereadings-article-chooser .coursereadings-article .drag-handle {
+	left:3px;
+	cursor:n-resize;
+	background:#fff url([[pix:core|i/dragdrop]]) no-repeat 1px 1px;
+}
+.coursereadings-article-chooser .coursereadings-article .delete-btn {
+	right:3px;
+	cursor:pointer;
+	background:#fff url([[pix:core|i/invalid]]) no-repeat 1px 1px; /* red cross icon */
+}
+.mform fieldset div div.coursereadings-article-list {
+	margin-bottom:35px;
+}
+.coursereadings-article-chooser-toolbar {
+	position:absolute;
+	bottom:5px;
+	width:100%;
+	text-align:center;
+}
+.coursereadings_article_link_fields {
+	width:100%;
+	margin-top:15px;
+}
+.coursereadings_article_link_fields input.error,
+.coursereadings_article_link_fields input.error:focus {
+	border-color:#ff6666;
+}
+
+/* Article search form */
+.article_search_results {
+	min-height:1.5em;
+	max-height:200px;
+	overflow:auto;
+}
+.article_search_results .coursereadings-article {
+	margin-bottom:7px;
+	cursor:pointer;
+}
+.article_search_results .coursereadings-article.selected,
+.article_search_results .coursereadings-article.selected:hover {
+	background-color:#ccc;
+}
+.article_search_results .coursereadings-article:hover {
+	background-color:#ddd;
+}
+
+/* All course articles view */
+.coursereadings_course_articles {
+	margin-top:0;
+	margin-bottom:4px;
+}
+.coursereadings_course_articles li {
+	list-style-type:none;
+}
+.coursereadings_course_articles li > input {
+	margin-left:-20px;
+	margin-right:7px;
+}
+
+/* Content migration */
+.coursereadings_content_migration {
+	border:1px solid #666;
+	height:800px;
+	position:relative;
+}
+.coursereadings_content_migration_preview {
+	width:550px;
+	border-left:1px solid #666;
+	position:absolute;
+	top:0; right:0;
+	height:100%;
+}
+.coursereadings_content_migration_form {
+	display:none;
+}
+.coursereadings_content_migration_list {
+	height:100%;
+}
+.coursereadings_content_migration_list,
+.coursereadings_content_migration_form {
+	overflow-y:auto;
+	margin-right:550px;
+}
+.coursereadings_resource_instance {
+	border-bottom:1px solid #aaa;
+	padding:10px;
+	color:#999;
+	background-color:#ccc;
+	position:relative;
+}
+.coursereadings_resource_instance a:link,
+.coursereadings_resource_instance a:visited {
+	color:#999;
+}
+.coursereadings_resource_instance.active a:link,
+.coursereadings_resource_instance.active a:visited {
+	color:#0033CC;
+}
+.coursereadings_resource_instance.active,
+.coursereadings_content_migration_form .coursereadings_resource_instance {
+	color:#000;
+	background-color:#fff;
+}
+.coursereadings_resource_instance.migrated,
+input[type="number"].coursereadings_article_pagecount_success {
+	background-color:#dfd;
+}
+.coursereadings_resource_instance.not_migrated,
+input[type="number"].coursereadings_article_pagecount_error {
+	background-color:#fdd;
+}
+.coursereadings_resource_instance label {
+	display:block;
+	font-weight:bold;
+	font-size:120%;
+}
+.coursereadings_resource_instance .migration_controls {
+	display:none;
+	position:absolute;
+	top:10px;
+	right:5px;
+	text-align:right;
+	width:200px;
+}
+.coursereadings_resource_instance button {
+	font-weight:bold;
+	padding:3px;
+	border:1px solid #999;
+	border-radius:4px;
+	margin:3px;
+}
+.coursereadings_resource_instance button.is_copyright {
+	background-color: #8EBD76;
+	background-position: 0 30px;
+}
+.coursereadings_resource_instance button.is_copyright:hover {
+	/* over-ride bootstrap button */
+	background-color: #5B9D39; /* was #f9f */
+	background-image: -moz-linear-gradient(top,#8EBD76,#5B9D39);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#8EBD76),to(#5B9D39));
+	background-image: -webkit-linear-gradient(top,#8EBD76,#5B9D39);
+	background-image: -o-linear-gradient(top,#8EBD76,#5B9D39);
+	background-image: linear-gradient(to bottom,#8EBD76,#5B9D39);
+}
+.coursereadings_resource_instance button.not_copyright {
+	background-color: #CC8383;
+	background-position: 0 30px;
+}
+.coursereadings_resource_instance button.not_copyright:hover {
+	/* over-ride bootstrap button */
+	background-color: #B45757; /* was #f99 */
+	background-image: -moz-linear-gradient(top,#CC8383,#B45757);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#CC8383),to(#B45757));
+	background-image: -webkit-linear-gradient(top,#CC8383,#B45757);
+	background-image: -o-linear-gradient(top,#CC8383,#B45757);
+	background-image: linear-gradient(to bottom,#CC8383,#B45757);
+}
+.coursereadings_resource_instance button.is_copyright:hover,
+.coursereadings_resource_instance button.not_copyright:hover {
+	/* over-ride bootstrap button */
+	background-position: 0 30px;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+.coursereadings_resource_instance.active .migration_controls {
+	display:block;
+}
+.coursereadings_resource_instance.active.migrated button,
+.coursereadings_resource_instance.active.not_migrated button.not_copyright {
+	display:none;
+}
+.coursereadings_resource_instance.active.migrated {
+	background-color:#8EBD76;
+}
+.coursereadings_resource_instance.active.not_migrated {
+	background-color:#B45757;
+}
+.coursereadings_content_migration_form .instance_meta {
+
+}
+.coursereadings_content_migration_form .instance_meta button {
+	display:none;
+}
+.coursereadings_content_migration_form .instance_form {
+	padding:20px;
+}
+.coursereadings_content_migration_form .instance_form table.dndupload_handler_source_details,
+.dndupload_handler_source_selected table.dndupload_handler_source_details {
+	margin-top:0px;
+}
+.coursereadings_content_migration_form > button {
+	margin-right:20px;
+	float:right;
+}
+.coursereadings_content_migration_form .instance_filematch {
+	padding:20px;
+	background-color:#dfd;
+	display:none;
+}
+.coursereadings_content_migration_form .instance_filematch button {
+	float:right;
+	margin-top:-50px;
+}
+.coursereadings_content_migration_form .yui3-widget-ft {
+	padding:0 1em 1em;
+}
+.coursereadings_content_migration_form .yui3-widget-ft button {
+	float:right;
+	margin:0 0.2em 0.4em;
+}
+.coursereadings_resource_intro {
+	display:none;
+}
+.instance_meta .coursereadings_resource_intro {
+	display:block;
+}
+.coursereadings-migration-notes-view {
+	max-height:200px;
+	overflow:auto;
+}
+.coursereadings-migration-notes-view h4 {
+	margin-bottom:0;
+}
+.coursereadings-migration-notes-view pre {
+	margin-top:0;
+	white-space:pre-wrap;
+}
+
+/* Management dashboard */
+.coursereadings_dashboard_pod {
+	min-width:400px;
+	width:33%;
+	border:1px solid #666;
+	margin:-1px 0 0 -1px;
+	float:left;
+}
+.coursereadings_dashboard_pod_last {
+	clear:right;
+}
+.coursereadings_dashboard h3 {
+	text-align:center;
+	margin-top:5px;
+}
+.coursereadings_dashboard h4 {
+	font-size:100%;
+	font-weight:normal;
+	text-align:center;
+	margin-bottom:2px;
+}
+.coursereadings_dashboard ul {
+	margin:0;
+	padding:0;
+}
+.coursereadings_dashboard li {
+	list-style-type:none;
+	margin:8px;
+	border:1px solid #999;
+	border-radius:7px;
+	padding:4px 24px 4px 4px;
+	position:relative;
+	overflow:hidden;
+}
+.coursereadings_dashboard li li {
+	border:0px none;
+	padding:0;
+	list-style-type:circle;
+	margin:0 0 0 15px;
+	overflow:visible;
+}
+.coursereadings_dashboard .item-controls {
+	position:absolute;
+	top:50%;
+	margin-top:-31px;
+	right:0;
+	width:20px;
+}
+.coursereadings_dashboard .coursereadings-breach .item-controls {
+	margin-top:-10px;
+}
+.coursereadings_dashboard .btn-delete {
+	display:none;
+}
+.coursereadings_dashboard .coursereadings-deletable .btn-delete {
+	display:inline;
+}
+.coursereadings_dashboard .item-controls > img {
+	cursor:pointer;
+}
+.coursereadings_dashboard.coursereadings_flagged .item-controls {
+	margin-top:-39px;
+}
+#fitem_id_sourcedisplay .felement {
+	position:relative;
+}
+#fitem_id_sourcedisplay .source_clear {
+	position:absolute;
+	top:7px;
+	right:5px;
+	cursor:pointer;
+}
+.dashboard_source_name .source_clear {
+	margin:0 0 16px -20px;
+	vertical-align:bottom;
+	cursor:pointer;
+}
+textarea.coursereadings-flag-notes,
+textarea.coursereadings-migration-notes,
+textarea.coursereadings-breach-notes {
+	width:97%;
+	height:80px;
+}
+
+.coursereadings_dashboard.coursereadings_flagged {
+	border:1px solid #666;
+	padding:10px;
+}
+.coursereadings-dashboard-item .dashboard-item-detail {
+	min-width:400px;
+	width:45%;
+	float:left;
+}
+.coursereadings-dashboard-item .dashboard-item-notes {
+	min-width:400px;
+	width:40%;
+	float:left;
+	clear:right;
+}
+.coursereadings-dashboard-item .dashboard-item-usage {
+	min-width:110px;
+	width:10%;
+	float:left;
+	clear:right;
+}
+.coursereadings-dashboard-item h4 {
+	font-weight:bold;
+	text-align:left;
+}
+.coursereadings-dashboard-item pre {
+	font:1em/1 monospace;
+	margin:3px 0;
+}
+.coursereadings-dashboard-item pre {
+	white-space:pre-wrap;
+}
+
+.dashboard_breach_detail h3,
+.dashboard_breach_detail h4 {
+	margin-bottom:3px;
+}
+.dashboard_breach_detail th,
+.dashboard_breach_detail td {
+	padding:0.25em 0.5em;
+}
+
+.dashboard_breach_detail .articles {
+	list-style-type:none;
+	margin:0 1px;
+}
+.dashboard_breach_detail .articles li {
+	margin-bottom:2px;
+	padding:2px;
+}
+.dashboard_breach_detail .coursereadings-unapproved {
+	background-color:#B45757;
+}
+.dashboard_breach_detail .coursereadings-approved {
+	background-color:#99ffcc;
+}
+.dashboard_breach_detail .coursereadings-approved.coursereadings-withinlimits {
+	background-color:#8EBD76;
+}
+.coursereadings-approval-notes {
+	width:99%;
+	height:150px;
+}
+.yui3-aclist-item .source-approved {
+	background-color:#BFFFB3;
+	margin:-2px -5px; /* counteract padding on parent LI */
+	padding:2px 5px; /* replicate padding from parent LI */
+}
+.coursereadings-dashboard-item .source-approved {
+	background-color:#BFFFB3;
+}
+.path-mod-coursereadings-manage .tabtree .tabrow0 li.here a {
+	z-index:2;
+}
+.coursereadings-breach-notetoggle {
+	font-weight:bold;
+	cursor:pointer;
+}
+.coursereadings-breach-notetoggle:after {
+	font-size:80%;
+	content:" \25BA";
+}
+.coursereadings-breach-notetoggle.expanded:after {
+	content:" \25BC";
+}
+.coursereadings-breach-notes.loading {
+	height:20px;
+	background:url([[pix:theme|bg-header]]) no-repeat;
+}
+
+/* Edit article/source forms */
+
+.path-mod-coursereadings-manage-edit input[type="text"],
+.path-mod-coursereadings-manage-find input[type="text"] {
+	min-width:300px;
+	width:99%;
+}
+.fitem .yui3-aclist {
+	z-index:1000;
+}
+.path-mod-coursereadings-manage-edit .mform .fitem fieldset.felement {
+	float:none; /* Make source type sit in right-hand column of form */
+}
+
+/* Loading spinners while running autocomplete */
+input.yui3-aclist-input.loading {
+	background:url([[pix:core|i/loading_small]]) no-repeat right 5px center;
+}
+#id_sourcedisplay.yui3-aclist-input.loading,
+.dashboard_source_name input.yui3-aclist-input.loading {
+	background-position:right 25px center;
+}
+
+/* Hide IE's "clear" button as we add one where appropriate */
+input.yui3-aclist-input::-ms-clear {
+	display:none;
+}
+
+/* Reports - position filter controls nicely */
+form.coursereadings-report-filter {
+	text-align:center;
+}
+form.coursereadings-report-filter input[type="text"] {
+	width:200px;
+}
+form.coursereadings-report-filter input[type="submit"] {
+	margin-bottom:2px;
+}
+
+#coursereadings-report-contentusage thead,
+#coursereadings-report-sourceusage thead,
+#coursereadings-report-toolusage thead,
+#coursereadings-report-compliance thead {
+	background-color:#fff;
+}
+
+/* Source/article merge forms. */
+.mform .coursereadings-mergesource-merge-form .fitem fieldset.felement.fgroup,
+.mform .coursereadings-mergearticle-merge-form .fitem fieldset.felement.fgroup {
+	float:none;
+}
+#fgroup_id_sourcedisplaygrp .source_clear {
+	margin-left:-20px;
+	margin-top:-8px;
+	cursor:pointer;
+}
+#fgroup_id_keepfilegrp .keepfile-selected {
+	background-color:#BFFFB3;
+}
+#fgroup_id_keepfilegrp .keepfile button {
+	margin:6px;
+}
+
+/* Merge split article form - full-width looks ridiculous due to lack of content. */
+#page-mod-coursereadings-manage-merge-split-article form.mform {
+	width:800px;
+	margin:0 auto;
+}
+
+#coursereadings-reportperiods img.smallicon {
+	width:16px;
+	height:16px;
+}
